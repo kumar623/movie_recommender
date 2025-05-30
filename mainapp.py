@@ -2,7 +2,7 @@ import pickle
 import streamlit as st
 import pandas as pd
 
-# ——— Load your two pickles once on startup ———
+
 @st.cache_resource
 def load_models():
     with open("models/similarity.pkl", "rb") as f:
